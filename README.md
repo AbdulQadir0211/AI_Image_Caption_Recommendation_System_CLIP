@@ -95,7 +95,7 @@ streamlit run app.py
 
 ## Author
 - **Your Name**  
-  [LinkedIn](https://linkedin.com/in/abdulqadir02) | [GitHub](https://github.com/AbdulQadir0211)
+  [LinkedIn](https://linkedin.com/in/abdul-qadir0) | [GitHub](https://github.com/AbdulQadir0211)
 
 ---
 
