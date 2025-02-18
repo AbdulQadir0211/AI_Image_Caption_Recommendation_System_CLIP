@@ -9,10 +9,16 @@ def image_captioning(image_path, candidate_captions):
     best_captions, similarities = match_captions(image_features, candidate_captions, clip_model, processor)
     return best_captions, similarities
 
+
+def load_captions(file_path):
+    with open(file_path, 'r') as file:
+        captions = [line.strip() for line in file.readlines()]
+    return captions
+
 st.title("AI Image Caption Recommender with CLIP")
 uploaded_image = st.file_uploader("Upload an image", type=["jpg", "jpeg", "png"])
 
-candidate_captions = ["Trees, Travel and Tea!", "A refreshing beverage.", ...]  # Add all captions
+candidate_captions = load_captions('caption.txt')  
 
 if uploaded_image is not None:
     st.image(uploaded_image, caption="Uploaded Image", use_column_width=True)
